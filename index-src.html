@@ -4,9 +4,25 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
         <title>Contact form</title>
         <!-- Google font -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&subset=latin-ext" />
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&subset=latin-ext" />-->
         <!-- Bootstrap -->
-        <link charset='utf-8' href='css/style.css' media='screen' rel='stylesheet' type='text/css'>
+        <!--<link charset='utf-8' href='css/style.css' media='screen' rel='stylesheet' type='text/css'>-->
+        <noscript id="deferred-styles">
+            <link rel="stylesheet" type="text/css" href="style.css"/>
+        </noscript>
+        <script>
+            var loadDeferredStyles = function() {
+                var addStylesNode = document.getElementById("deferred-styles");
+                var replacement = document.createElement("div");
+                replacement.innerHTML = addStylesNode.textContent;
+                document.body.appendChild(replacement)
+                addStylesNode.parentElement.removeChild(addStylesNode);
+            };
+            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                    webkitRequestAnimationFrame || msRequestAnimationFrame;
+            if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+            else window.addEventListener('load', loadDeferredStyles);
+        </script>
     </head>
     <body>
 
