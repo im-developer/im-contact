@@ -132,11 +132,6 @@
     position: absolute!important;
     top: 0px;
 
-
-    // Apply styling to mobile and upwards
-    @include mq($from: mobile) {
-      width: 100%;
-    }
     // Apply styling up to devices smaller than tablets (exclude tablets)
     @include mq($until: tablet) {
       width: 100%;

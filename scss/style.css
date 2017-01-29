@@ -69,12 +69,8 @@ html, body {
   Not even necessary really.
   e.g. Height could be left out!
   */
-  width: 40%;
   height: 50%;
   transition: all 3s cubic-bezier(0.64, 0.09, 0.08, 1); }
-  @media (min-width: 20em) {
-    .center {
-      width: 100%; } }
   @media (max-width: 46.24em) {
     .center {
       width: 100%; } }
@@ -925,9 +921,6 @@ li.active:before {
     -moz-transition: all 1.8s cubic-bezier(0.425, 0.375, 0.15, 1);
     -o-transition: all 1.8s cubic-bezier(0.425, 0.375, 0.15, 1);
     transition: all 1.8s cubic-bezier(0.425, 0.375, 0.15, 1); }
-    @media (min-width: 20em) {
-      .contact-popup .check-content, .contact-popup .left-part {
-        width: 100%; } }
     @media (max-width: 46.24em) {
       .contact-popup .check-content, .contact-popup .left-part {
         width: 100%; } }
