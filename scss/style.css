@@ -823,7 +823,8 @@ li.active:before {
 .send-btn {
   font-family: "Jazeera", sans-serif;
   width: 100%;
-  background: transparent; }
+  background: transparent;
+  font-size: 14px; }
 
 .contact-popup {
   position: fixed;
