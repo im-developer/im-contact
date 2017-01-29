@@ -1,0 +1,91 @@
+/*=============================
+    Common Styles
+===============================*/
+
+html, body {
+  font-family: $jazeera;
+}
+
+[class*="atb-"] {
+  min-width: 95px;
+  padding: 11px 15px;
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none !important;
+  text-align: center;
+}
+
+/* Button Size */
+
+.atb-large {
+  padding: 13px 20px;
+  font-size: 14px;
+  &[class*="atb-modern-"] {
+    padding: 16px 25px;
+    font-size: 17px;
+  }
+}
+
+.atb-small {
+  padding: 9px 12px;
+  font-size: 11px;
+}
+
+/* Button Radius */
+
+.atb-pill {
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+.atb-round {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Fullwidth Button */
+
+.atb-fullwidth {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  /*
+  Nope =(
+  margin-left: -25%;
+  margin-top: -25%;
+  */
+
+  /*
+  Yep!
+  */
+  transform: translate(-50%, -50%);
+
+  /*
+  Not even necessary really.
+  e.g. Height could be left out!
+  */
+  width: 40%;
+  height: 50%;
+
+  transition: all 3s cubic-bezier(.64, .09, .08, 1);
+}
+
+body.active {
+  .center {
+    left: 26%;
+  }
+}
