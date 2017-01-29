@@ -131,7 +131,25 @@
   .check-content, .left-part {
     position: absolute!important;
     top: 0px;
-    width: 50%;
+
+
+    // Apply styling to mobile and upwards
+    @include mq($from: mobile) {
+      width: 100%;
+    }
+    // Apply styling up to devices smaller than tablets (exclude tablets)
+    @include mq($until: tablet) {
+      width: 100%;
+    }
+    // Same thing, in landscape orientation
+    @include mq($until: tablet, $and: '(orientation: landscape)') {
+      width: 50%;
+    }
+    // Apply styling to tablets up to desktop (exclude desktop)
+    @include mq(tablet, desktop) {
+      width: 50%;
+    }
+
     background: #F1E7E7;
     height: 100%;
     overflow: hidden;

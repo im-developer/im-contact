@@ -78,8 +78,25 @@ html, body {
   Not even necessary really.
   e.g. Height could be left out!
   */
-  width: 40%;
+  //width: 40%;
   height: 50%;
+
+  // Apply styling to mobile and upwards
+  @include mq($from: mobile) {
+    width: 100%;
+  }
+  // Apply styling up to devices smaller than tablets (exclude tablets)
+  @include mq($until: tablet) {
+    width: 100%;
+  }
+  // Same thing, in landscape orientation
+  @include mq($until: tablet, $and: '(orientation: landscape)') {
+    width: 40%;
+  }
+  // Apply styling to tablets up to desktop (exclude desktop)
+  @include mq(tablet, desktop) {
+    width: 40%;
+  }
 
   transition: all 3s cubic-bezier(.64, .09, .08, 1);
 }
