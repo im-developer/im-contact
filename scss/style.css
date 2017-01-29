@@ -69,17 +69,12 @@ html, body {
   Not even necessary really.
   e.g. Height could be left out!
   */
+  width: 40%;
   height: 50%;
   transition: all 3s cubic-bezier(0.64, 0.09, 0.08, 1); }
   @media (max-width: 46.24em) {
     .center {
       width: 100%; } }
-  @media (max-width: 46.24em) and (orientation: landscape) {
-    .center {
-      width: 40%; } }
-  @media (min-width: 46.25em) and (max-width: 61.24em) {
-    .center {
-      width: 40%; } }
 
 body.active .center {
   left: 26%; }
@@ -914,6 +909,7 @@ li.active:before {
   .contact-popup .check-content, .contact-popup .left-part {
     position: absolute !important;
     top: 0px;
+    width: 50%;
     background: #F1E7E7;
     height: 100%;
     overflow: hidden;
@@ -924,12 +920,6 @@ li.active:before {
     @media (max-width: 46.24em) {
       .contact-popup .check-content, .contact-popup .left-part {
         width: 100%; } }
-    @media (max-width: 46.24em) and (orientation: landscape) {
-      .contact-popup .check-content, .contact-popup .left-part {
-        width: 50%; } }
-    @media (min-width: 46.25em) and (max-width: 61.24em) {
-      .contact-popup .check-content, .contact-popup .left-part {
-        width: 50%; } }
   .contact-popup .check-content {
     right: -100%; }
   .contact-popup.active {
