@@ -20,7 +20,6 @@
                 نص ثالث هنا بخط بهيج<br>
                 يتبع هنا النص<br>
                 ايضا يتبع نفس الخط
-            </p>
         </div>
 
         <a href="#" class="atb-animate-e atb-info contact-btn">اضغط هنا</a>
@@ -32,7 +31,7 @@
     <div class="close-popup"><span></span></div>
     <div class="check-content">
         <div class="check-wrap">
-            <form>
+            <form method="post" action="send.php" id="contact-form">
                 <div class="row">
                     <div class="col-md-12">
                         <label for="name">الاسم</label>
@@ -54,13 +53,18 @@
                 <div class="row">
                     <div class="col-md-12">
                         <label for="info">النص</label>
-                        <input type="text" name="info" id="info" required />
+                        <textarea name="info" id="info" rows="5" required ></textarea>
                     </div>
                 </div>
+
                 <!-- Create Account Button -->
                 <div class="row" style="margin-top: 20px;">
                     <div class="col-md-12 text-center">
                         <button type="submit" class="atb-animate-e atb-info send-btn">ارسل</button>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-12 text-center" id="message">
                     </div>
                 </div>
             </form>
