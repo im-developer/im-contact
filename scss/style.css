@@ -805,6 +805,13 @@ li.active:before {
 
   .btn-outline-rounded {
     padding: 12px 20px; } }
+body {
+  background: url(http://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .main-title {
   color: #7E79EA;
   font-size: 50px;
@@ -918,6 +925,7 @@ li.active:before {
     top: 0px;
     width: 50%;
     background: #F1E7E7;
+    background: rgba(241, 231, 231, 0.5);
     height: 100%;
     overflow: hidden;
     -webkit-transition: all 1.8s cubic-bezier(0.425, 0.375, 0.15, 1);
