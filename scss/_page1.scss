@@ -156,7 +156,7 @@ body {
     // }
 
     background: #F1E7E7;
-    background: rgba(241, 231, 231, 0.5);
+    background: rgba(241, 231, 231, 0.8);
     height: 100%;
     overflow: hidden;
     -webkit-transition: all 1.8s cubic-bezier(0.425, 0.375, 0.15, 1);
@@ -181,3 +181,12 @@ body {
   background:url("css/ripple.svg") no-repeat;
   background-size: 42px 38px;
 }
+
+label, .label-active {
+  color: white;
+}
+
+input[type=datepicker], input[type=email], input[type=number], input[type=password], input[type=text], input[type=textarea], textarea {
+  border-bottom: 1px solid #fff;
+}
+

@@ -32,8 +32,31 @@ if (inputs) {
     }
 }
 
+// override jquery validate plugin defaults
+$.validator.setDefaults({
+    highlight: function(element) {
+        $(element).addClass('has-error');
+    },
+    unhighlight: function(element) {
+        $(element).removeClass('has-error');
+    },
+    errorElement: 'span',
+    errorClass: 'help-block',
+    errorPlacement: function(error, element) {
+        // if(element.parent('.input-group').length) {
+        //     error.insertAfter(element.parent());
+        // } else {
+        //     error.insertAfter(element);
+        // }
+    }
+});
+
+$('#contact-form').validate();
 
 $('#contact-form').submit(function () {
+
+    if( !$('#contact-form').valid() ) return false;
+
     $('.send-btn').addClass("ripple-loading").prop('disabled', true);
     $('#message').html("")
     $.ajax({

@@ -100,7 +100,7 @@ body.active .center {
 .form-heading {
   margin-top: -70px;
   padding: 20px;
-  background: #9c27b0;
+  background: #fff;
   margin-bottom: 40px;
   border-radius: 3px;
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
@@ -122,7 +122,7 @@ body.active .center {
   height: 30px; }
 
 .icon.icon-primary {
-  color: #9c27b0;
+  color: #fff;
   font-size: 24px;
   float: left;
   padding-right: 16px;
@@ -184,7 +184,7 @@ input[type=number] {
   border-bottom: solid 1px #d2d2d2;
   will-change: background-position;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #9c27b0 96%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 96%);
   background-position: -1920px 0;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -266,7 +266,7 @@ input[type=checkbox]:before {
   content: '';
   width: 20px;
   height: 20px;
-  border: 1px solid #9c27b0;
+  border: 1px solid #fff;
   border-radius: 3px;
   background: #fff;
   position: absolute;
@@ -276,14 +276,14 @@ input[type=checkbox]:before {
 input[type=checkbox]:after {
   content: '✓';
   color: #fff;
-  background: #9c27b0;
+  background: #fff;
   position: absolute;
   top: -2px;
   margin-left: -1px;
   left: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid #9c27b0;
+  border: 1px solid #fff;
   border-radius: 3px;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -313,11 +313,11 @@ input[type=radio]:before {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px solid #9c27b0;
+  border: 1px solid #fff;
   display: inline-block;
   top: -5px;
   left: -8px;
-  background-image: radial-gradient(circle, #9c27b0 60%, #fff 70%);
+  background-image: radial-gradient(circle, #fff 60%, #fff 70%);
   background-size: 0;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -359,35 +359,35 @@ input[type=file] {
   margin-top: 20px;
   padding: 8px 14px;
   float: right;
-  background: #9c27b0;
+  background: #fff;
   border-radius: 3px;
   color: #fff;
-  border: 1px solid #9c27b0;
+  border: 1px solid #fff;
   font-weight: 300;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2); }
 
 .adam-button:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-  background: #9c27b0;
-  border: 1px solid #9c27b0; }
+  background: #fff;
+  border: 1px solid #fff; }
 
 .adam-button2 {
   margin-top: 3px;
   padding: 8px 14px;
   float: right;
-  background: #9c27b0;
+  background: #fff;
   border-radius: 3px;
   color: #fff;
-  border: 1px solid #9c27b0;
+  border: 1px solid #fff;
   font-weight: 300;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2); }
 
 .adam-button2:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-  background: #9c27b0;
-  border: 1px solid #9c27b0; }
+  background: #fff;
+  border: 1px solid #fff; }
 
 .clear-button {
   position: absolute;
@@ -620,7 +620,7 @@ input[type=file] {
   font-size: 32px; }
 
 .rating.star .rating-wrapper > input:checked ~ label {
-  color: #9c27b0; }
+  color: #fff; }
 
 .rating.star .rating-wrapper > input:hover ~ label {
   color: #f55a4e; }
@@ -805,6 +805,9 @@ li.active:before {
 
   .btn-outline-rounded {
     padding: 12px 20px; } }
+[aria-invalid="true"], .has-error {
+  border-bottom: 1px solid beige !important; }
+
 body {
   background: url(http://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -925,7 +928,7 @@ body {
     top: 0px;
     width: 50%;
     background: #F1E7E7;
-    background: rgba(241, 231, 231, 0.5);
+    background: rgba(241, 231, 231, 0.8);
     height: 100%;
     overflow: hidden;
     -webkit-transition: all 1.8s cubic-bezier(0.425, 0.375, 0.15, 1);
@@ -946,6 +949,12 @@ body {
 .ripple-loading {
   background: url("css/ripple.svg") no-repeat;
   background-size: 42px 38px; }
+
+label, .label-active {
+  color: white; }
+
+input[type=datepicker], input[type=email], input[type=number], input[type=password], input[type=text], input[type=textarea], textarea {
+  border-bottom: 1px solid #fff; }
 
 /* Animate E*/
 .atb-animate-e {

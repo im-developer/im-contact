@@ -15,13 +15,13 @@
     — Tab Panel
 
 ======================================================== */
-
+$pinkColor: #fff;
 /* ============ DEFAULTS =========== */
 
 .form-heading {
   margin-top: -70px;
   padding: 20px;
-  background: #9c27b0;
+  background: $pinkColor;
   margin-bottom: 40px;
   border-radius: 3px;
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -48,7 +48,7 @@
 }
 
 .icon.icon-primary {
-  color: #9c27b0;
+  color: $pinkColor;
   font-size: 24px;
   float: left;
   padding-right: 16px;
@@ -110,7 +110,7 @@ label {
 
 .label-required:before {
   //content: '*';
-  //color: #9c27b0;
+  //color: $pinkColor;
   //position: absolute;
   //margin-right: -10px
 }
@@ -135,7 +135,7 @@ input[type=number] {
   border-bottom: solid 1px #d2d2d2;
   will-change: background-position;
   transition: all .3s cubic-bezier(.64, .09, .08, 1);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #9c27b0 96%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, $pinkColor 96%);
   background-position: -1920px 0;
   background-size:100%;
   background-repeat: no-repeat;
@@ -223,7 +223,7 @@ input[type=checkbox]:before {
   content: '';
   width: 20px;
   height: 20px;
-  border: 1px solid #9c27b0;
+  border: 1px solid $pinkColor;
   border-radius: 3px;
   background: #fff;
   position: absolute;
@@ -234,14 +234,14 @@ input[type=checkbox]:before {
 input[type=checkbox]:after {
   content: '✓';
   color: #fff;
-  background: #9c27b0;
+  background: $pinkColor;
   position: absolute;
   top: -2px;
   margin-left: -1px;
   left: 0;
   width: 20px;
   height: 20px;
-  border: 1px solid #9c27b0;
+  border: 1px solid $pinkColor;
   border-radius: 3px;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -274,11 +274,11 @@ input[type=radio]:before {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px solid #9c27b0;
+  border: 1px solid $pinkColor;
   display: inline-block;
   top: -5px;
   left: -8px;
-  background-image: radial-gradient(circle, #9c27b0 60%, #fff 70%);
+  background-image: radial-gradient(circle, $pinkColor 60%, #fff 70%);
   background-size: 0;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -331,10 +331,10 @@ input[type=file] {
   margin-top: 20px;
   padding: 8px 14px;
   float: right;
-  background: #9c27b0;
+  background: $pinkColor;
   border-radius: 3px;
   color: #fff;
-  border: 1px solid #9c27b0;
+  border: 1px solid $pinkColor;
   font-weight: 300;
   transition: all .3s cubic-bezier(.64, .09, .08, 1);
   box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
@@ -342,18 +342,18 @@ input[type=file] {
 
 .adam-button:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-  background: #9c27b0;
-  border: 1px solid #9c27b0;
+  background: $pinkColor;
+  border: 1px solid $pinkColor;
 }
 
 .adam-button2 {
   margin-top: 3px;
   padding: 8px 14px;
   float: right;
-  background: #9c27b0;
+  background: $pinkColor;
   border-radius: 3px;
   color: #fff;
-  border: 1px solid #9c27b0;
+  border: 1px solid $pinkColor;
   font-weight: 300;
   transition: all .3s cubic-bezier(.64, .09, .08, 1);
   box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
@@ -361,8 +361,8 @@ input[type=file] {
 
 .adam-button2:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-  background: #9c27b0;
-  border: 1px solid #9c27b0;
+  background: $pinkColor;
+  border: 1px solid $pinkColor;
 }
 
 .clear-button {
@@ -639,7 +639,7 @@ input[type=file] {
 }
 
 .rating.star .rating-wrapper > input:checked ~ label {
-  color: #9c27b0;
+  color: $pinkColor;
 }
 
 .rating.star .rating-wrapper > input:hover ~ label {
@@ -850,4 +850,8 @@ li.active:before {
   .btn-outline-rounded {
     padding:12px 20px;
   }
+}
+
+[aria-invalid="true"], .has-error {
+  border-bottom: 1px solid beige !important;
 }
