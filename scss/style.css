@@ -78,6 +78,9 @@ html, body {
 
 body.active .center {
   left: 26%; }
+  @media (max-width: 46.24em) {
+    body.active .center {
+      left: 50%; } }
 
 /* ========================================================
 	Bootstrap - Floating Form
@@ -929,6 +932,7 @@ body {
     width: 50%;
     background: #F1E7E7;
     background: rgba(241, 231, 231, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     height: 100%;
     overflow: hidden;
     -webkit-transition: all 1.8s cubic-bezier(0.425, 0.375, 0.15, 1);

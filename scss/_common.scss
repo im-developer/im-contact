@@ -100,5 +100,8 @@ html, body {
 body.active {
   .center {
     left: 26%;
+    @include mq($until: tablet) {
+      left: 50%;
+    }
   }
 }

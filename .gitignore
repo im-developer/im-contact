@@ -1,9 +1,11 @@
 package.json
 node_modules
 .idea
+.sass-cache
 Gruntfile.js
 js/bootstrap.min.js
 js/jquery-3.1.1.min.js
 js/script.js
+index-min.html
 scss
 bower_components
